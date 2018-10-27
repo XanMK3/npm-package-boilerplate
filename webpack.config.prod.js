@@ -1,6 +1,6 @@
 'use strict';
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const baseConfig = require('./webpack.config.js');
 
@@ -14,17 +14,23 @@ const prodConfig = Object.assign({}, baseConfig, {
             },
             {
                 test: /\.css$|\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader?sourceMap', 'sass-loader?sourceMap']
-                })
-            }
+                use: [
+                  MiniCssExtractPlugin.loader,
+                  'css-loader?sourceMap',
+                  'sass-loader?sourceMap',
+                ],
+              }
         ],
         noParse: [/\.min\.js/]
     },
 });
 
-prodConfig.plugins.push(new ExtractTextPlugin('main.css'));
+prodConfig.plugins.push(
+    new MiniCssExtractPlugin({
+        filename: "[name].css",
+        chunkFilename: "[name].css"
+      })
+);
 
 prodConfig.externals = {
     'react': {
