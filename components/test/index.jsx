@@ -5,6 +5,7 @@ class TestComponent extends Component {
         return (
             <div>
                 <h1>Master</h1>
+                <div>feature 1</div>
             </div>
         );
     }
