@@ -1,6 +1,6 @@
 {
   "name": "npm-package-boilerplate",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "main": "index.js",
   "keywords": [],
   "author": "",
@@ -57,7 +57,7 @@
     "build": "webpack --config ./webpack.config.prod.js",
     "eslint": "node_modules/.bin/eslint.cmd --ext .js --ext .jsx ./components",
     "changelog": "node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "version": "npm run build && changelog &&  git add -A dist CHANGELOG.md",
+    "version": "npm run build && npm run changelog && git add -A dist CHANGELOG.md",
     "release": "npm version minor -m \"upgrade to %s\""
   }
 }
