@@ -57,6 +57,7 @@
     "build": "webpack --config ./webpack.config.prod.js",
     "eslint": "node_modules/.bin/eslint.cmd --ext .js --ext .jsx ./components",
     "changelog": "node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s",
-    "version": "npm run build && git add -A dist"
+    "version": "npm run build && git add -A dist",
+    "release": "npm version minor -m \"upgrade to %s\""
   }
 }
