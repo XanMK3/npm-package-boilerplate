@@ -12,6 +12,7 @@ class TestComponent extends Component {
                 <div>feature 5</div>
                 <div>feature 6</div>
                 <div>feature 7</div>
+                <div>feature 8</div>
             </div>
         );
     }
