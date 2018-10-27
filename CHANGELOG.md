@@ -1,3 +1,14 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/XanMK3/npm-package-boilerplate/compare/v1.4.0...v1.5.0) (2018-10-27)
+
+
+### Features
+
+* feature12 ([d4c5f27](https://github.com/XanMK3/npm-package-boilerplate/commit/d4c5f27))
+* feature13 ([ce21f4d](https://github.com/XanMK3/npm-package-boilerplate/commit/ce21f4d))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/XanMK3/npm-package-boilerplate/compare/v1.2.0...v1.4.0) (2018-10-27)
 
